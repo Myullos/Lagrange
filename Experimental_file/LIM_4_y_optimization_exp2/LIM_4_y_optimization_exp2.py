@@ -17,7 +17,7 @@ def error_integral(f_interp):
     func = lambda x: (original_function(x) - f_interp(x))**2
     return quad(func, -5, 5)[0]
 
-# Initial setup
+# Number of interpolation nodes
 n = 10
 
 # Generate Chebyshev nodes on [-1, 1] and scale to [-5, 5]
@@ -33,7 +33,8 @@ best_y = y.copy()
 # Optimization parameters
 np.random.seed(0)
 iterations = 1000
-step_size = 0.001  # Random perturbation amplitude for y-values
+ # Random perturbation amplitude for y-values
+step_size = 0.001
 
 # Store error history
 error_history = [best_error]
