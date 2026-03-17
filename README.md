@@ -75,9 +75,7 @@ $$
 本研究を基盤として、今後はより体系的な理論構築を行い、研究として発展させていくことを目指す。
 
 ---
-'''
 Experimental_file/
-│
 ├── LIM_1_equidistance/
 │   ├── LIM_1_animation.py
 │   └── LIM_1_equidistance.py
@@ -107,6 +105,5 @@ Experimental_file/
 │
 ├── LICENSE
 └── README.md
-'''
 
 
