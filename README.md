@@ -1,4 +1,4 @@
-# Curvature-Constrained Lagrange Interpolation
+# Lagrange Interpolation
 
 ## 概要（Abstract）
 
