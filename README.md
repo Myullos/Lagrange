@@ -76,9 +76,9 @@ $$
 
 ---
 ## 各ディレクトリ・ファイルの説明
-### LIM_1_equidistance
+### <b>LIM_1_equidistance</b>
 
-- LIM_1_equidistance.py  
+- <b>LIM_1_equidistance.py</b>  
   等間隔ノードを用いたラグランジュ補間の基本実装。
 
   主な手法は以下の通り：
@@ -92,7 +92,7 @@ $$
   - 高次数では境界付近で大きな振動が発生  
   - ルンゲ現象の典型例を観察可能  
 
-- LIM_1_animation.py  
+- <b>LIM_1_animation.py</b>  
   等間隔ノードによるラグランジュ補間の挙動を可視化するManimアニメーション。
 
   主に以下を表示：
@@ -101,9 +101,9 @@ $$
 
 ---
 
-### LIM_2_chevyshev_nodes
+### <b>LIM_2_chevyshev_nodes</b>
 
-- LIM_2_chevyshev_nodes.py  
+- <b>LIM_2_chevyshev_nodes.py</b>  
   チェビシェフノードを用いたラグランジュ補間の実装。
 
   主な手法は以下の通り：
@@ -117,7 +117,7 @@ $$
   - ルンゲ現象の軽減  
   - 安定した多項式補間の基礎手法  
 
-- LIM_2_animation.py  
+- <b>LIM_2_animation.py</b>  
   チェビシェフノードによる補間と元関数の比較を可視化するManimアニメーション。
 
   主に以下を表示：
@@ -127,9 +127,9 @@ $$
 
 ---
 
-### LIM_3_reLIM_exp1
+### <b>LIM_3_reLIM_exp1</b>
 
-- LIM_3_reLIM_exp1.py  
+- <b>LIM_3_reLIM_exp1.py</b>  
   大域的なラグランジュ補間に対して、誤差の大きい区間で局所的に再補間を行う<b>再補間手法（Re-interpolation）</b>の実装。
 
   主な手法は以下の通り：
@@ -146,27 +146,21 @@ $$
   - 大域補間と局所補間のハイブリッド構造  
   - 区間ごとの適応的精度制御が可能  
 
-- LIM_3_animation.py  
+- <b>LIM_3_animation.py</b>  
   誤差に基づく区間選択と局所再補間の過程を可視化するManimアニメーション。
 
 ---
 
-### LIM_4_y_optimization_exp2
+### <b>LIM_4_y_optimization_exp2</b>
 
-- LIM_4_y_optimization_exp2.py  
+- <b>LIM_4_y_optimization_exp2.py</b>  
   ノードの関数値（y値）を最適化することで補間誤差を低減する<b>y値最適化補間（y-value Optimization Interpolation）</b>の実装。
 
   主な手法は以下の通り：
 
   1. チェビシェフノードを用いて初期補間を構築  
   2. ノード位置は固定し、関数値（y値）のみを変化させる  
-  3. 誤差面積  
-     
-     [
-     \int_{-5}^{5} \bigl(f(x) - P(x)\bigr)^2 , dx
-     ]
-
-     を評価  
+  3. 誤差面積を評価  
   4. ランダム摂動を繰り返し適用  
   5. 誤差が減少する場合のみ更新を採用  
 
@@ -175,14 +169,14 @@ $$
   - 離散的なパラメータ最適化による補間制御  
   - 誤差の収束過程を評価可能  
 
-- LIM_4_animation.py  
+- <b>LIM_4_animation.py</b>  
   y値最適化による補間関数の変化と誤差の減少過程を可視化するManimアニメーション。
 
 ---
 
-### LIM_5_curv_corr_exp3
+### <b>LIM_5_curv_corr_exp3</b>
 
-- LIM_5_curv_corr_exp3.py  
+- <b>LIM_5_curv_corr_exp3.py</b>  
   チェビシェフ補間に対して、曲率（2階微分）を用いた補正項を加える<b>曲率補正補間（Curvature-Corrected Interpolation）</b>の実装。
 
   主な手法は以下の通り：
@@ -190,12 +184,7 @@ $$
   1. チェビシェフノードを用いてラグランジュ補間 ( P(x) ) を構築  
   2. 補間関数の2階微分 ( P''(x) ) を計算  
   3. 重み関数 ( w(x) ) を導入  
-  4. 次の補間関数を構成：
-
-     [
-     P_{\text{corr}}(x) = P(x) + t , w(x) , P''(x)
-     ]
-
+  4. 補正項を加えた補間関数を構成  
   5. 係数 ( t ) を誤差最小化により決定  
 
   特徴：
@@ -205,9 +194,9 @@ $$
 
 ---
 
-### LIM_6_curv_driven_interp_exp4
+### <b>LIM_6_curv_driven_interp_exp4</b>
 
-- LIM_6_curv_driven_interp_exp4.py  
+- <b>LIM_6_curv_driven_interp_exp4.py</b>  
   局所的なバブル関数を用いた<b>曲率駆動補間（Curvature-Driven Interpolation）</b>の実装。
 
   主な手法は以下の通り：
@@ -222,14 +211,14 @@ $$
   - 振動の抑制  
   - ハイブリッド補間構造  
 
-- LIM_6_animation.py  
+- <b>LIM_6_animation.py</b>  
   曲率駆動補間の構築過程を可視化。
 
 ---
 
-### LIM_7_curv_controlled_interp_exp5
+### <b>LIM_7_curv_controlled_interp_exp5</b>
 
-- LIM_7_curv_controlled_interp_exp5.py  
+- <b>LIM_7_curv_controlled_interp_exp5.py</b>  
   傾きの反復更新により曲率を制御する<b>曲率制御補間（Curvature-Controlled Interpolation）</b>の実装。
 
   主な手法は以下の通り：
@@ -244,15 +233,15 @@ $$
   - ノード値を厳密保持  
   - 安定かつ滑らかな補間  
 
-- LIM_7_animation.py  
+- <b>LIM_7_animation.py</b>  
   反復収束の過程を可視化。
 
 ---
 
-### その他
+### <b>その他</b>
 
-- LICENSE  
+- <b>LICENSE</b>  
   ライセンス情報  
 
-- README.md  
+- <b>README.md</b>  
   本リポジトリの説明ファイル
