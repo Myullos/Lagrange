@@ -75,35 +75,81 @@ $$
 本研究を基盤として、今後はより体系的な理論構築を行い、研究として発展させていくことを目指す。
 
 ---
-Experimental_file/
-├── LIM_1_equidistance/
-│   ├── LIM_1_animation.py
-│   └── LIM_1_equidistance.py
-│
-├── LIM_2_chevyshev_nodes/
-│   ├── LIM_2_animation.py
-│   └── LIM_2_chevyshev_nodes.py
-│
-├── LIM_3_reLIM_exp1/
-│   ├── LIM_3_animation.py
-│   └── LIM_3_reLIM_exp1.py
-│
-├── LIM_4_y_optimization_exp2/
-│   ├── LIM_4_animation.py
-│   └── LIM_4_y_optimization_exp2.py
-│
-├── LIM_5_curv_corr_exp3/
-│   └── LIM_5_curv_corr_exp3.py
-│
-├── LIM_6_curv_driven_interp_exp4/
-│   ├── LIM_6_animation.py
-│   └── LIM_6_curv_driven_interp_exp4.py
-│
-├── LIM_7_curv_controlled_interp_exp5/
-│   ├── LIM_7_animation.py
-│   └── LIM_7_curv_controlled_interp_exp5.py
-│
-├── LICENSE
-└── README.md
+##ファイルの説明
+## 各ディレクトリ・ファイルの説明
 
+### LIM_1_equidistance
+
+- LIM_1_equidistance.py  
+  等間隔ノードを用いたラグランジュ補間の基本実装。補間誤差やルンゲ現象の確認を目的とする。
+
+- LIM_1_animation.py  
+  等間隔補間における多項式の振る舞いを可視化するManimアニメーション。
+
+---
+
+### LIM_2_chevyshev_nodes
+
+- LIM_2_chevyshev_nodes.py  
+  チェビシェフノードを用いた補間の実装。境界付近の振動を抑制する効果を確認する。
+
+- LIM_2_animation.py  
+  等間隔ノードとの違いを視覚的に比較するアニメーション。
+
+---
+
+### LIM_3_reLIM_exp1
+
+- LIM_3_reLIM_exp1.py  
+  再補間（Re-interpolation）手法の実装。補間の安定性向上を目的とした実験。
+
+- LIM_3_animation.py  
+  再補間による関数形の変化や収束の様子を可視化。
+
+---
+
+### LIM_4_y_optimization_exp2
+
+- LIM_4_y_optimization_exp2.py  
+  ノード上の関数値（y値）を調整・最適化することで補間誤差を低減する手法の実装。
+
+- LIM_4_animation.py  
+  最適化による補間精度の変化を視覚的に表示。
+
+---
+
+### LIM_5_curv_corr_exp3
+
+- LIM_5_curv_corr_exp3.py  
+  曲率（2階微分）に基づく補正項を導入し、補間の滑らかさと安定性を改善する手法。
+
+---
+
+### LIM_6_curv_driven_interp_exp4
+
+- LIM_6_curv_driven_interp_exp4.py  
+  曲率情報を利用して補間を動的に調整する手法の実装。
+
+- LIM_6_animation.py  
+  曲率に応じて変化する補間関数の挙動を可視化。
+
+---
+
+### LIM_7_curv_controlled_interp_exp5
+
+- LIM_7_curv_controlled_interp_exp5.py  
+  曲率を制御パラメータとして扱い、補間の精度と滑らかさを同時に最適化する手法。
+
+- LIM_7_animation.py  
+  最終的な曲率制御補間モデルの動作を示すアニメーション。
+
+---
+
+### その他
+
+- LICENSE  
+  ライセンス情報。
+
+- README.md  
+  本リポジトリの説明ファイル。
 
