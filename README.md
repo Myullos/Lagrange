@@ -74,3 +74,40 @@ $$
 
 本研究を基盤として、今後はより体系的な理論構築を行い、研究として発展させていくことを目指す。
 
+---
+##ディレクトリマップ
+Experimental_file/
+│
+├── LIM_1_equidistance/
+│   ├── LIM_1_animation.py
+│   └── LIM_1_equidistance.py
+│
+├── LIM_2_chevyshev_nodes/
+│   ├── LIM_2_animation.py
+│   └── LIM_2_chevyshev_nodes.py
+│
+├── LIM_3_reLIM_exp1/
+│   ├── LIM_3_animation.py
+│   └── LIM_3_reLIM_exp1.py
+│
+├── LIM_4_y_optimization_exp2/
+│   ├── LIM_4_animation.py
+│   └── LIM_4_y_optimization_exp2.py
+│
+├── LIM_5_curv_corr_exp3/
+│   └── LIM_5_curv_corr_exp3.py
+│
+├── LIM_6_curv_driven_interp_exp4/
+│   ├── LIM_6_animation.py
+│   └── LIM_6_curv_driven_interp_exp4.py
+│
+├── LIM_7_curv_controlled_interp_exp5/
+│   ├── LIM_7_animation.py
+│   └── LIM_7_curv_controlled_interp_exp5.py
+│
+├── LICENSE
+└── README.md
+
+
+
+
